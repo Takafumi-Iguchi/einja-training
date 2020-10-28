@@ -1,0 +1,24 @@
+/* ================================
+共通CSS
+=================================== */
+/* 全ページで使うであろう汎用クラスを取り扱っています */
+
+* { list-style: none; }
+a { 
+    text-decoration: none;
+    color: white;
+}
+
+/* Font */
+.fc-white { color: white; }
+
+.fw-bold{ font-weight: bold; }
+
+/* Background */
+.bc-black { background-color: black;}
+
+/* Border */
+.border-b { border-bottom: solid 1px white;}
+
+/* Layout */
+.flex { display: flex; }

@@ -1,0 +1,215 @@
+/* FONT */
+@import url(//db.onlinewebfonts.com/c/164fce79eadeff648f8b1e539b2975db?family=Avenir+Next+Condensed+Medium);
+
+@font-face {font-family: "Avenir Next Condensed Medium"; src: url("//db.onlinewebfonts.com/t/164fce79eadeff648f8b1e539b2975db.eot"); src: url("//db.onlinewebfonts.com/t/164fce79eadeff648f8b1e539b2975db.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/164fce79eadeff648f8b1e539b2975db.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/164fce79eadeff648f8b1e539b2975db.woff") format("woff"), url("//db.onlinewebfonts.com/t/164fce79eadeff648f8b1e539b2975db.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/164fce79eadeff648f8b1e539b2975db.svg#Avenir Next Condensed Medium") format("svg"); }
+
+@font-face {
+  font-family: "Avenir Next";
+  src : local("AvenirNextLTPro-Regular.otf");
+}
+.ff_Athelas {
+  font-family: athelas, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.ff_Avenir_Next {
+  font-family: Avenir Next;
+  font-weight: normal;
+}
+.ff_Avenir_Next_Condensed {
+  font-family: "Avenir Next Condensed Medium";
+  font-weight: normal;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+section {
+  border: 1px solid #ddd;
+}
+.hero-header {
+  background-color: #091921;
+  /*background: url(top-avenger-bg.jpg) no-repeat center center;
+  background-size: cover;*/
+  text-align: center; 
+  color: #ffffff;
+  height: auto;
+  min-height: 700px;
+  display: table;
+  width: 100%;
+}
+.hero-header h1 {
+  margin-top: -30px !important;
+}
+.hero-wrap {
+  vertical-align: middle;
+  padding-top: 40%;
+}
+.hero-title-catch {
+  float: left;
+  margin-left: 5%;
+}
+
+.hero-title-name {
+  float: right;
+  margin-right: 5%;
+}
+
+.hero-title-position {
+  display: inline-block;
+  position: relative; /*必ず必要*/
+  z-index: 2; /*必ず必要*/
+  padding:20px;
+}
+.hero-title {
+  font-size: 38px;
+  letter-spacing: 14px;
+  line-height: 51px;
+}
+.hero-sub-title {
+  font-size: 15px;
+    opacity: .8;
+}
+.sub1 {
+  letter-spacing: 22px;
+  padding-left: 8px;
+}
+.sub2 {
+  letter-spacing: 18px;
+  padding-left: 6px;
+}
+
+.mov {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+video {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: 120%;
+height: auto;
+z-index: 1;
+}
+@media screen and (max-width: 375px) {
+  .hero-header {
+    padding-top: 3rem;
+  }
+  .hero-wrap {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 10%;
+  }
+  .hero-title-catch {
+    float: none;
+    margin-left: 0;
+  }
+  .hero-title-name {
+    display: none;
+  }
+  .hero-title-position {
+    padding: 3.1rem;
+  }
+  .hero-title {
+    font-size: 25px;
+    letter-spacing: 9px;
+    line-height: 40px;
+  }
+  .hero-sub-title {
+    font-size: 16px;
+  }
+  .sub1 {
+    letter-spacing: 10px;
+  }
+} 
+
+
+/* ▷文字サイズ等 */
+/*p.wp-embed-heading {
+  margin: 0 0 15px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 0.3 !important;
+}
+
+/* ▷画像サイズ */
+/*.wp-embed-featured-image img {
+  width: 50% !important;
+  height: auto !important;
+  border: none !important;
+}*/
+
+/*=======================
+1. Fadein Animation
+=======================*/
+.sample-text,.sample-text1,
+.sample-text2,.sample-text3 {
+  opacity: 0;
+}
+
+.sample-text.show,.sample-text1.show {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+.sample-text2.show,.sample-text3.show {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-title {
+  position: relative;
+  z-index: -1;
+}
+
+
+/*=======================
+2. Flip Animation
+=======================*/
+.target,.target2,.target3,.target4 {
+  opacity: 0;
+  perspective : 200px;
+}
+.target span,
+.target2 span,
+.target3 span,
+.target4 span {
+  /* flip effect */
+  transform : rotateY(-90deg);
+  /* fade effect */
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
